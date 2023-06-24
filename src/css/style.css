@@ -1,0 +1,65 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  color: #212121;
+  line-height: 1.5;
+}
+
+.search-form {
+  padding: 20px;
+  background-color: #1a0285;
+  display: flex;
+  justify-content: center;
+}
+
+.search-form button,
+input {
+  font: inherit;
+}
+
+input {
+  width: 300px;
+  margin-right: 5px;
+}
+
+.gallery {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.photo-card {
+  margin: 10px;
+  border: solid 1px #adadad;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.photo-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.info {
+  padding: 10px;
+}
+
+.info-item {
+  margin: 0 10px 0 0;
+}
